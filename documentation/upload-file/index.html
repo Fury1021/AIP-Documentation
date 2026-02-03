@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Upload File - AIP Documentation
+    </title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Upload File. A simple form to upload AIS documents (AIP, amendments, supplements, AICs) so the AIS team can publish them."/>
+    <link rel="icon" type="image/svg+xml" href="https://AIPdocumentation"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://AIPdocumentation">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://AIPdocumentation">    
+        
+    <meta property="og:image" content="https://AIPdocumentation"/>
+    <meta property="og:url" content="https://AIPdocumentation/documentation/upload-file/">
+    <meta property="og:title" content="Upload File - AIP Documentation" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Upload File. A simple form to upload AIS documents (AIP, amendments, supplements, AICs) so the AIS team can publish them."/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content="Upload File - AIP Documentation" />
+    <meta name="twitter:description" content="Upload File. A simple form to upload AIS documents (AIP, amendments, supplements, AICs) so the AIS team can publish them." />
+    <meta name="twitter:image" content="https://AIPdocumentation"/>
+
+    <link rel="canonical" href="https://AIPdocumentation/documentation/upload-file/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&subset=latin&display=swap"
+          rel="stylesheet"/>
+    
+    <link rel="preload" href="https://AIPdocumentation/_lib/index.css" as="style">
+    <link rel="stylesheet" href="https://AIPdocumentation/_lib/index.css"/>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+        html {
+            scroll-padding-top: 120px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        const theme = getInitialTheme();
+        document.documentElement.classList.add('theme-' + theme);
+    </script>
+    
+</head>
+<body>
+
+<div id="root">
+    <sl-drawer id="menu-drawer" label="Documentation" class="drawer__control" placement="top">
+        <div class="body__drawer">
+            <div class="items">
+                
+                    
+                        <sl-button 
+                            class="nav_button  current " 
+                            size="medium" 
+                            href="/"
+                        >
+                            Documentation
+                        </sl-button>
+                         
+                
+            </div>
+            <sl-divider class="divider__drawer"></sl-divider>
+            <nav class="tree">
+                <div class="scroll-panel">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="Pi3WpqFraScVhYTEUcavr" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/">AIP Dashboard</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="MgAwjbiNPxm2IpyhCrOvs" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/upload-file/">Upload File</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="9Gkz-9u8-ccyY1xwLDYFr" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/archives/">Archives</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="KoW2bNDADBEKNlS15Yse_" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/view-file/">View File</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </div>
+            </nav>
+        </div>
+    </sl-drawer>
+
+    <div class="body__wrapper">
+        <div class="nav__container">
+            <nav>
+                <div class="border-box"></div>
+                <div class="logo">
+                    
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+
+                        </div>
+                    
+                    <div>
+                        
+                            <span class="line-clamp-1">[Company Name]</span>
+                        
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        
+                            
+                                <sl-button 
+                                    class="nav_button  current " 
+                                    size="medium" 
+                                    href="/"
+                                >
+                                    Documentation
+                                </sl-button>
+                                                    
+                        
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <sl-button id="search-button" class="search_button">
+                            <sl-icon slot="prefix" name="search"></sl-icon>
+                            Search
+                            <div slot="suffix">
+                                <div class="button__prefix-wrapper">
+                                    <div class="button__prefix-container">
+                                        <sl-icon name="command"></sl-icon>
+                                        <span class="font-w-semibold">K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </sl-button>
+                    </div>
+                    <div>
+                        <sl-dropdown id="theme-selector" hoist>
+                            <sl-button slot="trigger" class="nav_button">
+                                <sl-icon id="theme-selector-icon" slot="prefix" name="sun"></sl-icon>
+                            </sl-button>
+                            <sl-menu id="theme-selector-menu">
+                                <sl-menu-item type="checkbox" value="light">Light</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="dark">Dark</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="system">System</sl-menu-item>
+                            </sl-menu>
+                        </sl-dropdown>
+                    </div>
+                    <div class="menu">
+                        <sl-button id="menu-open-trigger" class="nav_button" outline>
+                            <sl-icon slot="prefix" name="list"></sl-icon>
+                        </sl-button>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <div class="content__container">
+            <aside class="tree">
+                <nav id="nav-tree" class="tree">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="Pi3WpqFraScVhYTEUcavr" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/">AIP Dashboard</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="MgAwjbiNPxm2IpyhCrOvs" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/upload-file/">Upload File</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="9Gkz-9u8-ccyY1xwLDYFr" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/archives/">Archives</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="KoW2bNDADBEKNlS15Yse_" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/documentation/view-file/">View File</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </nav>
+                <nav id="white-label-container" class="menu">
+                    <a class="white-label" href="https://tiledocs.com" target="_blank">
+                        <div class="card-container">
+                            <div class="icon-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="title-section">
+                                <sl-tooltip hoist style="--max-width: 30ch;" placement="top-start" content="This documentation site was created using TileDocs, a fast and user-friendly editor for building and hosting documentation projects.">
+                                    <span>Made with TileDocs</span>
+                                <sl-tooltip>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </aside>
+            
+            <article>
+                <main>
+                    <div class="content">
+                        <h1 id="upload-file" dir="ltr"><span style="white-space: pre-wrap;">Upload File</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">A simple form to upload AIS documents (AIP, amendments, supplements, AICs) so the AIS team can publish them.</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 50%;"><img src="/_images/image_2026-02-03_013829674.png" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"></div></div><h2 id="step-by-step-(what-to-do)" dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Step-by-step (what to do)</strong></b></h2><ol><li value="1" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Select a Category:</strong></b><span style="white-space: pre-wrap;">&nbsp;Choose one of:</span></li><li value="2" style="text-align: start;"><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">AIP</strong></b><span style="white-space: pre-wrap;">&nbsp;— full AIP parts and chapters</span></li><li value="2"><b><strong class="text-bold" style="white-space: pre-wrap;">AMDT</strong></b><span style="white-space: pre-wrap;">&nbsp;— amendment to existing AIP material</span></li><li value="3"><b><strong class="text-bold" style="white-space: pre-wrap;">SUP</strong></b><span style="white-space: pre-wrap;">&nbsp;— supplement (choose Bravo/Charlie series)</span></li><li value="4"><b><strong class="text-bold" style="white-space: pre-wrap;">AIC</strong></b><span style="white-space: pre-wrap;">&nbsp;— aeronautical information circular</span></li></ul></li><li value="2" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">If you chose&nbsp;</strong></b><b><code spellcheck="false" style="white-space: pre-wrap;"><strong class="text-bold text-code">SUP</strong></code></b><b><strong class="text-bold" style="white-space: pre-wrap;">:</strong></b><span style="white-space: pre-wrap;">&nbsp;pick a Path Name (Bravo or Charlie).</span></li><li value="3" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">If you chose&nbsp;</strong></b><b><code spellcheck="false" style="white-space: pre-wrap;"><strong class="text-bold text-code">AIP</strong></code></b><b><strong class="text-bold" style="white-space: pre-wrap;">:</strong></b><span style="white-space: pre-wrap;">&nbsp;pick a Part (Part 1 = GEN, Part 2 = ENR, Part 3 = AD) then choose the Chapter/Number. Some Part 3 (AD) selections show extra sub‑choices (e.g., INTERNATIONAL, MILITARY).</span></li><li value="4" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Subsection:</strong></b><span style="white-space: pre-wrap;">&nbsp;Short identifier or subsection name (required).</span></li><li value="5" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Title:</strong></b><span style="white-space: pre-wrap;">&nbsp;Full title of the document. (For AMDT, include the effective date in the title if needed.)</span></li><li value="6" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Batch Date Reference (optional):</strong></b><span style="white-space: pre-wrap;">&nbsp;Pick a CURRENT or UPCOMING batch to auto-fill Publication and Effectivity dates, or leave blank to enter those dates manually.</span></li><li value="7" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Publication Date &amp; Effectivity Date:</strong></b><span style="white-space: pre-wrap;">&nbsp;Enter when the document is published and when it becomes effective (required).</span></li><li value="8" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Expiration Type:</strong></b><span style="white-space: pre-wrap;">&nbsp;Choose:</span></li><li value="9" style="text-align: start;"><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">Self-Expiratory</strong></b><span style="white-space: pre-wrap;">&nbsp;— you must enter an End Date.</span></li><li value="2"><b><strong class="text-bold" style="white-space: pre-wrap;">PERM</strong></b><span style="white-space: pre-wrap;">&nbsp;— permanent; no end date.</span><br><span style="white-space: pre-wrap;">The form will show/hide the End Date field based on this choice.</span></li></ul></li><li value="9" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Upload PDF:</strong></b><span style="white-space: pre-wrap;">&nbsp;Attach the document as a PDF only (.pdf). This is required.</span></li><li value="10" style="text-align: start;"><b><strong class="text-bold" style="white-space: pre-wrap;">Submit Document:</strong></b><span style="white-space: pre-wrap;">&nbsp;Click the Submit button; a success message appears if upload completes.</span></li></ol><h2 id="quick-tips" dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Quick tips</strong></b></h2><ul><li value="1" style="text-align: start;"><span style="white-space: pre-wrap;">Use a Batch Date to avoid manual date entry errors.</span></li><li value="2" style="text-align: start;"><span style="white-space: pre-wrap;">For AIP uploads, confirm you picked the right Part and Chapter to keep documents organized.</span></li><li value="3" style="text-align: start;"><span style="white-space: pre-wrap;">Double-check expiration dates if the document should expire (Self-Expiratory).</span></li><li value="4" style="text-align: start;"><span style="white-space: pre-wrap;">Ensure your file is a PDF and not password-protected.</span></li></ul>
+                    </div>
+                </main>
+                <div class="footer">
+                    <div class="content">
+                        <div class="date">
+                            <div>Feb 3, 2026</div>
+                        </div>
+                        
+                            <a href="/" class="column left-column" title="AIP Dashboard">
+                                <div class="icon">
+                                    <sl-icon name="chevron-left"></sl-icon>
+                                </div>
+                                <div class="label">
+                                    <div class="title">PREVIOUS</div>
+                                    <div class="line-clamp-2">
+                                        AIP Dashboard
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        
+                            <a href="/documentation/archives/" class="column right-column" title="Archives">
+                                <div class="label">
+                                    <div class="title">NEXT</div>
+                                    <div class="line-clamp-2">
+                                        Archives
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <sl-icon name="chevron-right"></sl-icon>
+                                </div>
+                            </a>
+                        
+                    </div>
+                </div>
+            </article>
+            <aside class="toc">
+                <nav class="toc">
+                    
+                    <div class="title">
+                        <sl-icon class="icon" name="list-nested"></sl-icon>
+                        <div>
+                            On this page
+                        </div>
+                    </div>
+                    <div id="toc-list" class="list">
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/documentation/upload-file/#step-by-step-(what-to-do)">Step-by-step (what to do)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/documentation/upload-file/#quick-tips">Quick tips</a>
+                                </div>
+                                
+                        
+                    </div>
+                    
+                </nav>
+            </aside>
+        </div>
+        <footer>
+            <div class="stack__column stack__gap-4 stack__center">
+                
+                <div class="stack__row stack__center">
+                    <span><span>Year &copy; Company Name</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<sl-dialog id="search-dialog" class="dialog_control dialog__search">
+    <div slot="label">
+        <p>Search</p>
+    </div>
+    <div class="pane stack__column stack__gap-4">
+        <div>
+            <sl-input
+                id="search-input"
+                type="text"
+                size="small"
+                autocomplete="off"
+                autofocus
+                clearable
+                placeholder="Type text you want to search..."
+            >
+            </sl-input>
+        </div>
+        <div id="search-result" class="stack__column stack__gap-4 search-result">
+        </div>
+        <div id="search-footer" class="footer"></div>
+    </div>
+</sl-dialog>
+<script type="module" src="https://AIPdocumentation/_lib/index.js" data-shoelace="https://AIPdocumentation/_lib"></script>
+<script type="module">
+    import {initPage, initTheme, initSearch, initToc} from 'https://AIPdocumentation/_lib/init.js';
+    import {preInitTree} from 'https://AIPdocumentation/_lib/pre.js';
+    preInitTree();
+    await initPage();
+    await initTheme('dark');
+    await initSearch('https://AIPdocumentation', '1770088108919');
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    initToc();
+</script>
+
+</body>
+</html>

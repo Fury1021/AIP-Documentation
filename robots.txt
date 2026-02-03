@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://AIPdocumentation/sitemap_index.xml
